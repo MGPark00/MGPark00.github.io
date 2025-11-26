@@ -53,15 +53,22 @@
     }
 
     section {
-      margin-top: 24px;
-    }
+  margin: 32px 0;          /* 위아래 여백 늘리기 */
+  padding-top: 16px;       /* 제목 위쪽 살짝 띄우기 */
+  border-top: 1px solid #e5e7eb;  /* 섹션 사이 구분선 */
+}
 
-    h2 {
-      font-size: 1.2rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
-    }
+section:first-of-type {
+  border-top: none;        /* 맨 첫 섹션은 선 없이 */
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;          /* 제목 색 조금 더 진하게 */
+  margin: 0 0 12px 0;
+  border-bottom: none;     /* 아래 선은 없애고 위 선만 사용 */
+}
 
     ul {
       padding-left: 20px;
